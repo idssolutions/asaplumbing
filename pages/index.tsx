@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Services from "../components/Services";
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center flex-1 w-full px-20 text-center">
         <Services />
+        <Contact/>
       </main>
     </div>
   );
