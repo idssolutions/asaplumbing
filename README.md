@@ -1,27 +1,33 @@
-# Next.js + Tailwind CSS Example
+# ASA Plumbing
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Purpose 
+Point of contact for the company. First impressions. 
 
-## Preview
+## Process
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+### 1. Design
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+#### Grab corresponding components from the design library. You can make edits in the design library as needed.  
 
-## Deploy your own
+[x] Nav
+[] About
+[x] Services
+[x] Contact
+[x] Footer
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+#### Get assets from the client
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+[] logo
+[] about section photo
+[] domain name and dns server info
 
-## How to use
+### 2. Develop
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+#### Contact
+[x] Make/Add the Contact.tsx component
+[] Add functionality to the contact form.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+#### Add client assets 
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[] Put client information in client.ts
+[] Upload logo and replace sample logo throughout project
