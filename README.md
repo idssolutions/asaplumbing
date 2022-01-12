@@ -17,11 +17,12 @@ Point of contact for the company. First impressions.
 
 #### Get assets from the client
 
-[] logo
+[x] logo
 [] about section photo
 [] domain name and dns server info
 
 ### 2. Develop
+[] fix logo sizing - web responsive
 
 #### Contact
 [x] Make/Add the Contact.tsx component
