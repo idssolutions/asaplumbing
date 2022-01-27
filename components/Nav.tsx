@@ -7,12 +7,7 @@ export default function Nav() {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <a className="text-2xl leading-none text-gray-600" href="#">
-            <img
-              className="h-24"
-              src="/logo.png"
-              alt
-              width="auto"
-            />
+            <img className="h-24" src="/logo.png" alt width="auto" />
           </a>
           <div className="lg:hidden">
             <button className="block text-blue-500 navbar-burger hover:text-blue-700 focus:outline-none">
@@ -33,11 +28,7 @@ export default function Nav() {
                 About
               </a>
             </li>
-            <li>
-              <a className="text-sm font-medium hover:text-blue-700" href="#">
-                Company
-              </a>
-            </li>
+
             <li>
               <a className="text-sm font-medium hover:text-blue-700" href="#">
                 Services
@@ -45,7 +36,7 @@ export default function Nav() {
             </li>
             <li>
               <a className="text-sm font-medium hover:text-blue-700" href="#">
-                Testimonials
+                Contact
               </a>
             </li>
           </ul>
@@ -53,7 +44,7 @@ export default function Nav() {
             className="block px-5 py-3 text-sm font-semibold text-white transition duration-200 bg-blue-500 border border-blue-500 rounded hover:bg-blue-600 hover:border-blue-600"
             href="#"
           >
-            Call now
+            Call Now
           </a>
         </div>
       </div>
@@ -62,12 +53,7 @@ export default function Nav() {
         <nav className="relative flex flex-col w-full h-full px-6 py-6 overflow-y-auto bg-white border-r">
           <div className="flex items-center mb-12">
             <a className="mr-auto text-2xl font-semibold leading-none" href="#">
-              <img
-                className="h-8"
-                src="/logo.png"
-                alt
-                width="auto"
-              />
+              <img className="h-8" src="/logo.png" alt width="auto" />
             </a>
             <button className="navbar-close">
               <svg
@@ -101,14 +87,6 @@ export default function Nav() {
                   className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
                   href="#"
                 >
-                  Company
-                </a>
-              </li>
-              <li className="mb-1">
-                <a
-                  className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
-                  href="#"
-                >
                   Services
                 </a>
               </li>
@@ -117,7 +95,7 @@ export default function Nav() {
                   className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
                   href="#"
                 >
-                  Testimonials
+                 Contact
                 </a>
               </li>
             </ul>
@@ -128,7 +106,7 @@ export default function Nav() {
                 className="block px-5 py-3 mb-3 text-sm font-semibold text-center text-white transition duration-200 bg-blue-500 border border-blue-500 rounded hover:bg-blue-600 hover:border-blue-600"
                 href="#"
               >
-                Call now
+                Call Now
               </a>
             </div>
             <p className="mt-6 mb-4 text-sm text-center text-gray-500">

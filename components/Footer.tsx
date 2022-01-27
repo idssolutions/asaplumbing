@@ -23,17 +23,12 @@ export default function Footer() {
           </li>
           <li className="mx-4 mb-2 md:mb-0">
             <a className="text-sm font-medium hover:text-blue-700" href="#">
-              Company
-            </a>
-          </li>
-          <li className="mx-4 mb-2 md:mb-0">
-            <a className="text-sm font-medium hover:text-blue-700" href="#">
               Services
             </a>
           </li>
           <li className="mx-4 mb-2 md:mb-0">
             <a className="text-sm font-medium hover:text-blue-700" href="#">
-              Testimonials
+              Contact
             </a>
           </li>
         </ul>
