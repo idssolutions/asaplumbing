@@ -7,7 +7,7 @@ export default function Nav() {
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <a className="text-2xl leading-none text-gray-600" href="#">
-            <img className="h-24" src="/logo.png" alt width="auto" />
+            <img className="h-24" src="/logo.png" alt="ASA Plumbing" width="auto" />
           </a>
           <div className="lg:hidden">
             <button className="block text-blue-500 navbar-burger hover:text-blue-700 focus:outline-none">
@@ -53,7 +53,7 @@ export default function Nav() {
         <nav className="relative flex flex-col w-full h-full px-6 py-6 overflow-y-auto bg-white border-r">
           <div className="flex items-center mb-12">
             <a className="mr-auto text-2xl font-semibold leading-none" href="#">
-              <img className="h-8" src="/logo.png" alt width="auto" />
+              <img className="h-8" src="/logo.png" alt="ASA Plumbing" width="auto" />
             </a>
             <button className="navbar-close">
               <svg
