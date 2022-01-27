@@ -53,7 +53,7 @@ export default function Contact() {
                 defaultValue={""}
               />
               <button className="block px-5 py-3 text-sm font-semibold text-white transition duration-200 bg-blue-500 border border-blue-500 rounded hover:bg-blue-600 hover:border-blue-600">
-                Action
+                Submit
               </button>
             </form>
           </div>

@@ -10,7 +10,7 @@ export default function Footer() {
         >
           <img
             className="h-8"
-            src="plain-assets/logos/plain-blue.svg"
+            src="/logo.png"
             alt
             width="auto"
           />
@@ -58,7 +58,7 @@ export default function Footer() {
       <div className="mt-12 mb-8 border-b" />
       <div className="container px-4 mx-auto">
         <p className="text-sm text-center text-gray-500">
-          All rights reserved. © Plain Inc.
+          All rights reserved. © ASA Plumbing Inc.
         </p>
       </div>
     </footer>
