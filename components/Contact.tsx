@@ -9,6 +9,23 @@ export default function Contact() {
   const handleChange = ({ target }) => {
     setContactData({ ...contactData, [target.name]: target.value });
   };
+  const handleSubmit = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(contactData),
+    }).then((res) => {
+      if (res.status === 200) {
+        setSubmitted(true);
+        setContactData({ name: "", email: "", message: "" });
+      }
+    });
+  };
   return (
     <section className="py-20">
       <div className="container px-4 mx-auto">
@@ -29,12 +46,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <form
-              onSubmit={(e) => {
-                e.preventDefault()
-                console.log(contactData);
-              }}
-            >
+            <form onSubmit={handleSubmit}>
               <input
                 onChange={handleChange}
                 className="w-full py-3 pl-3 mb-4 border rounded"
