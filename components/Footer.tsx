@@ -11,7 +11,7 @@ export default function Footer() {
           <img
             className="h-8"
             src="/logo.png"
-            alt
+            alt="ASA Plumbing"
             width="auto"
           />
         </a>
