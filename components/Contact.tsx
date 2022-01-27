@@ -7,28 +7,13 @@ export default function Contact() {
           <div className="w-full px-4 mb-8 lg:w-1/2 lg:mb-0">
             <div className="max-w-lg">
               <h2 className="mb-8 text-3xl font-bold leading-tight lg:mb-12 md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-heading">
-                Lorem ipsum dolor sit amet consectutar domor at elis
+                Questions, Concerns, Need a Quote?
               </h2>
-              <h3
-                className="mb-1 text-2xl font-bold font-heading"
-                data-removed="true"
-              >
-                Address
-              </h3>
-              <p
-                className="mb-6 text-lg leading-loose text-blue-500"
-                data-removed="true"
-              >
-                1686 Geraldine Lane New York, NY 10013
-              </p>
               <h3 className="mb-1 text-2xl font-bold font-heading">
-                Give Us A Call
+                Email or Call
               </h3>
               <p className="text-lg leading-loose text-blue-500">
-                hello@wireframes.org
-              </p>
-              <p className="text-lg leading-loose text-blue-500">
-                + 7-843-672-431
+                (843) 672-4312
               </p>
             </div>
           </div>

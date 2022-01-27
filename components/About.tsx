@@ -6,7 +6,7 @@ export default function About() {
           <div className="w-full px-4 mb-12 md:w-1/2 md:mb-0">
             <div className="mx-auto lg:max-w-md">
               <h2 className="mb-6 text-3xl font-bold leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight font-heading">
-                Expand your brand with this excellent extension tool
+               Plumbing and Drain Service in the Phoenix Metro Area.
               </h2>
               <p className="mb-8 text-base leading-relaxed text-gray-500 lg:text-xl lg:leading-relaxed">
                 With this tool, you will get much better results at work and
