@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { toast } from "react-nextjs-toast";
+
 export default function Contact() {
   const [contactData, setContactData] = useState({
     name: "",
@@ -19,12 +21,21 @@ export default function Contact() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(contactData),
-    }).then((res) => {
-      if (res.status === 200) {
+    })
+      .then((res) => {
         setSubmitted(true);
         setContactData({ name: "", email: "", message: "" });
-      }
-    });
+        toast.notify("Your message was sent successfully!", {
+          duration: 5,
+          type: "success",
+        });
+      })
+      .catch((err) => {
+        toast.notify("There was an error when trying to send your message.", {
+          duration: 5,
+          type: "error",
+        });
+      });
   };
   return (
     <section className="py-20">
