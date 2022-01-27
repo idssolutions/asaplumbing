@@ -15,7 +15,7 @@ export default function About() {
               </p>
               <a
                 className="inline-block px-5 py-3 mb-3 text-sm font-semibold text-white transition duration-200 bg-blue-500 border border-blue-500 rounded md:mr-3 md:mb-0 hover:bg-blue-600 hover:border-blue-600"
-                href="#"
+                href="tel:4807964060"
               >
                 Call Now
               </a>
