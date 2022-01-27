@@ -33,20 +33,8 @@ export default function Footer() {
           </li>
         </ul>
         <div>
-          <a className="inline-block mr-2 lg:mr-10" href="#">
+          <a className="inline-block mr-2 lg:mr-10" href="https://g.co/kgs/Xt9ap2">
             <img src="plain-assets/socials/facebook.svg" />
-          </a>
-          <a className="inline-block mr-2 lg:mr-10" href="#">
-            <img src="plain-assets/socials/twitter.svg" />
-          </a>
-          <a className="inline-block mr-2 lg:mr-10" href="#">
-            <img src="plain-assets/socials/github.svg" />
-          </a>
-          <a className="inline-block mr-2 lg:mr-10" href="#">
-            <img src="plain-assets/socials/instagram.svg" />
-          </a>
-          <a className="inline-block" href="#">
-            <img src="plain-assets/socials/linkedin.svg" />
           </a>
         </div>
       </div>

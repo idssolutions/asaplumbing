@@ -10,10 +10,16 @@ export default function Contact() {
                 Questions, Concerns, Need a Quote?
               </h2>
               <h3 className="mb-1 text-2xl font-bold font-heading">
-                Email or Call
+                Address
+              </h3>
+              <address className="text-lg leading-loose text-blue-500">
+                1228 E. McLellan Blvd. Phoenix, AZ 85014
+              </address>
+              <h3 className="mb-1 text-2xl font-bold font-heading">
+                Phone
               </h3>
               <p className="text-lg leading-loose text-blue-500">
-                (843) 672-4312
+                (480) 796-4060
               </p>
             </div>
           </div>

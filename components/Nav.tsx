@@ -1,16 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import Image from "next/image";
 
 export default function Nav() {
+  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
   return (
     <nav className="py-8 bg-transparent">
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
           <a className="text-2xl leading-none text-gray-600" href="#">
-            <img className="h-24" src="/logo.png" alt="ASA Plumbing" width="auto" />
+            <img
+              className="h-24"
+              src="/logo.png"
+              alt="ASA Plumbing"
+              width="auto"
+            />
           </a>
+
           <div className="lg:hidden">
-            <button className="block text-blue-500 navbar-burger hover:text-blue-700 focus:outline-none">
+            <button
+              onClick={() => setMobileMenuIsOpen(true)}
+              className="block text-blue-500 navbar-burger hover:text-blue-700 focus:outline-none"
+            >
               <svg
                 className="w-4 h-4"
                 fill="currentColor "
@@ -22,7 +32,7 @@ export default function Nav() {
               </svg>
             </button>
           </div>
-          <ul className="items-center hidden w-auto ml-auto mr-10 space-x-12 lg:flex">
+          <ul className={`items-center ${mobileMenuIsOpen ? '':'hidden'} w-auto ml-auto mr-10 space-x-12 lg:flex`}>
             <li>
               <a className="text-sm font-medium hover:text-blue-700" href="#">
                 About
@@ -48,14 +58,19 @@ export default function Nav() {
           </a>
         </div>
       </div>
-      <div className="fixed top-0 bottom-0 left-0 z-50 hidden w-5/6 max-w-sm navbar-menu">
+      <div className={`fixed top-0 bottom-0 left-0 z-50 ${mobileMenuIsOpen ? '':'hidden'} w-5/6 max-w-sm navbar-menu`}>
         <div className="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop" />
         <nav className="relative flex flex-col w-full h-full px-6 py-6 overflow-y-auto bg-white border-r">
           <div className="flex items-center mb-12">
             <a className="mr-auto text-2xl font-semibold leading-none" href="#">
-              <img className="h-8" src="/logo.png" alt="ASA Plumbing" width="auto" />
+              <img
+                className="h-8"
+                src="/logo.png"
+                alt="ASA Plumbing"
+                width="auto"
+              />
             </a>
-            <button className="navbar-close">
+            <button className="navbar-close" onClick={()=>setMobileMenuIsOpen(false)}>
               <svg
                 className="w-6 h-6 cursor-pointer hover:text-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +110,7 @@ export default function Nav() {
                   className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
                   href="#"
                 >
-                 Contact
+                  Contact
                 </a>
               </li>
             </ul>
