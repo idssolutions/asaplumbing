@@ -7,14 +7,7 @@ export default function Nav() {
     <nav className="py-8 bg-transparent">
       <div className="container px-4 mx-auto">
         <div className="flex items-center justify-between">
-          <a className="text-2xl leading-none text-gray-600" href="#">
-            <img
-              className="h-24"
-              src="/logo.png"
-              alt="ASA Plumbing"
-              width="auto"
-            />
-          </a>
+         
 
           <div className="lg:hidden">
             <button
