@@ -1,34 +1,24 @@
-export default function (req, res) {
-  require("dotenv").config();
-  console.log(process.env.pw, process.env.email);
-  let nodemailer = require("nodemailer");
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
-    auth: {
-      user: process.env.email,
-      pass: process.env.pw,
-    },
-    secure: true,
-  });
-  const mailData = {
-    from: req.body.email,
-    to: process.env.email,
-    subject: `Contact Form Message From ${req.body.name}`,
-    text: req.body.message + " | Sent from: " + req.body.email,
-    html: `<div>${req.body.message}</div><p>Sent from:
-      ${req.body.email}</p>`,
-  };
-  transporter.sendMail(mailData, function (err, info) {
-    // if (err) {
-    //   res.status(400).json({ message: JSON.stringify(err) });
-    // }
-    if (err === null) {
-      res.status(200).json({ message: "Email sent successfully!" });
-    } else {
-      res
-        .status(400)
-        .json({ err: "There was an error when sending your email." });
-    }
-  });
+// https://app.sendgrid.com/guide/integrate/langs/nodejs
+const sgMail = require("@sendgrid/mail");
+sgMail.setApiKey(process.env.SENDGRID);
+
+export default function handler(req: any, res: any) {
+    let { name, email, message } = req.body;
+
+    const msg = {
+        to: process.env.TO_EMAIL,
+        from: process.env.FROM_EMAIL,
+        subject: name + " sent you a message from your site",
+        text: message + "\n\n-" + name,
+        cc: email,
+    };
+    sgMail
+        .send(msg)
+        .then(() => {
+            console.log("email sent");
+            res.send("Email sent");
+        })
+        .catch((error: any) => {
+            res.status(400).send(error.response.body[0]?.message);
+        });
 }
