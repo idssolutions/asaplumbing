@@ -14,10 +14,10 @@ export default function About() {
                             <p className="mb-8 text-base text-left text-gray-500 lg:w-2/3 lg:text-md lg:mx-auto">
                                 "We have used many other plumbers only to find
                                 out they did the job incorrectly or had no idea
-                                what they were doing. Tzvi really know his trade
-                                and has resolved all our plumbing issues. His
-                                pricing is great and his knowledge even
-                                greater."
+                                what they were doing. Tzvi [of ASA Plumbing]
+                                really knows his trade and has resolved all our
+                                plumbing issues. His pricing is great and his
+                                knowledge even greater."
                                 <br />
                                 <a
                                     href="https://goo.gl/maps/J2QQRdSDGmZtSGSW9"
