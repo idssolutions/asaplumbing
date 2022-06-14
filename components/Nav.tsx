@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Nav() {
     const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
@@ -38,20 +39,20 @@ export default function Nav() {
                         </li>
 
                         <li>
-                            <a
+                            <Link
                                 className="text-sm font-medium hover:text-blue-700"
-                                href="#services"
+                                href="/services"
                             >
                                 Services
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a
+                            <Link
                                 className="text-sm font-medium hover:text-blue-700"
-                                href="#contact"
+                                href="/contact"
                             >
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <a
@@ -104,28 +105,28 @@ export default function Nav() {
                     <div>
                         <ul>
                             <li className="mb-1">
-                                <a
+                                <Link
                                     className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
-                                    href="#about"
+                                    href="/about"
                                 >
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-1">
-                                <a
+                                <Link
                                     className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
-                                    href="#services"
+                                    href="/services"
                                 >
                                     Services
-                                </a>
+                                </Link>
                             </li>
                             <li className="mb-1">
-                                <a
+                                <Link
                                     className="block p-4 text-sm font-semibold rounded hover:bg-blue-50 hover:text-blue-500"
-                                    href="#contact"
+                                    href="/contact"
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
